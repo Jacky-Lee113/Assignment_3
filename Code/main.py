@@ -8,7 +8,7 @@ from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
 
 #import your models schema
-from MyApp.models import Person
+from MyApp.models import Product
 
 #Create Operations here
 data_dict={'name':'Banana','codes':1,price:0.99}
