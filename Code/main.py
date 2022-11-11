@@ -22,4 +22,3 @@ product.save()
 product = Product.objects.get()
 
 print(f'Product Name: {product.name}, Product code: {product.codes} Price: ${product.price}')
-#Prints Hello, I am Nimish, 23 y/o. Reachable at nimishverma@ymail.com
