@@ -1,5 +1,8 @@
-<form action="/cash-register/scan" method="get">
-    <label for="productId">Product ID: </label>
-    <input id="productId" type="text" name="code" value="">
-    <input type="submit" value="Scan">
+<form action="/cash-register/scan" method="get" class="row g-3 mb-3">
+  <div class="col-auto">
+    <input id="productId" type="text" name="code" value="" class="form-control" placeholder="Product code"> 
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary">Scan</button>
+  </div>
 </form>

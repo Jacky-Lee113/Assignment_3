@@ -1,7 +1,9 @@
-<h1>Display</h1>
+{% include '_header.html' %}
+
+<h1 class="d-flex justify-content-center mb-4">Display</h1>
 {% include '_form.html' %}
 
-<table>
+<table class="table">
   <tr>
     <th>Product</th>
     <th>Quantity</th>
@@ -16,6 +18,12 @@
   {% endfor %}
 </table>
 
-<p>Total: {{ total }}</p>
+<div class="d-flex align-items-end flex-column">
+<p class="fw-bold">Total: $ {{ total }}</p>
+</div>
 
-<a href="/cash-register/checkout">Checkout</a>
+<a href="/cash-register/checkout" class="btn btn-primary">Checkout</a>
+
+{% include '_product_table.html' %}
+
+{% include '_footer.html' %}

@@ -1,20 +1,10 @@
-<h1>Cash Register</h1>
-<h2>Start Scanning</h2>
+{% include '_header.html' %}
 
-<p>Please input the product code to start scanning</p>
+<h1 class="d-flex justify-content-center">Cash Register</h1>
+<h4 class="text-muted d-flex justify-content-center pb-3">Please input the product code to start scanning</h4>
 
 {% include '_form.html' %}
 
-<table>
-  <tr>
-    <th>Product</th>
-    <th>Code</th>
-  </tr>
-  {% for product in products %}
-  <tr>
-    <td>{{ product.name }}</td>
-    <td>{{ product.code }}</td>
-  </tr>
-  {% endfor %}
-</table>
+{% include '_product_table.html' %}
 
+{% include '_footer.html' %}

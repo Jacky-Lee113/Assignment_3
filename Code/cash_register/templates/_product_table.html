@@ -1,0 +1,12 @@
+<table class="table table-striped mt-3">
+  <tr>
+    <th>Product</th>
+    <th>Code</th>
+  </tr>
+  {% for product in products %}
+  <tr>
+    <td>{{ product.name }}</td>
+    <td>{{ product.code }}</td>
+  </tr>
+  {% endfor %}
+</table>

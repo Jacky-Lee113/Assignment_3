@@ -14,4 +14,4 @@ class Cart(models.Model):
         for item in Cart.objects.all():
             cart_total += item.product.price * item.quantity
 
-        return cart_total
+        return "{:.2f}".format(cart_total)

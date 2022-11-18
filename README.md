@@ -21,6 +21,7 @@ of the architecture's requirement.
 `python populate.py`
 4. Run the django server
 `python manage.py runserver`
+5. Navigate to `http://localhost:8000/cash-register`
 
 ## Screenshots & Demonstration
 
