@@ -1,2 +1,21 @@
-<h1>Scan</h1>
-{{ product.name }}
+<h1>Display</h1>
+{% include '_form.html' %}
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Price</th>
+  </tr>
+  {% for item in cart %}
+  <tr>
+    <td>{{ item.product.name }}</td>
+    <td>{{ item.quantity}}</td>
+    <td>{{ item.product.price }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<p>Total: {{ total }}</p>
+
+<a href="/cash-register/checkout">Checkout</a>

@@ -1,1 +1,20 @@
 <h1>Cash Register</h1>
+<h2>Start Scanning</h2>
+
+<p>Please input the product code to start scanning</p>
+
+{% include '_form.html' %}
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Code</th>
+  </tr>
+  {% for product in products %}
+  <tr>
+    <td>{{ product.name }}</td>
+    <td>{{ product.code }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
