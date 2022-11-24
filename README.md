@@ -25,14 +25,7 @@ of the architecture's requirement.
 
 ## Screenshots & Demonstration
 
-### Populating the database
-
-
-### Scanning a product
-
-
-### Removing a product
-
+Here is [the link](/Screenshot.md) for the application screenshots.
 
 ### Group members
 
